@@ -2,8 +2,75 @@
   text-align: center;
   background-color: #FFFDF8;
   display: grid;
+  grid-template-areas: 'head head'
+              'foto forms';
+  grid-template-columns: 1fr 2fr;            
 
 }
+.header{
+  grid-area:head;
+}
+.listaHeader{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 100%;
+  justify-content: space-around;
+} 
+
+.forms{
+  grid-area: forms;
+  display:grid;
+  width:100%;
+  grid-template-areas: 'contato contato'
+                      'input input';  
+  grid-template-columns: 1fr 1fr;
+
+}
+.titulo{
+  grid-area:contato;
+  width: 100%;
+}
+.AppForm{
+  grid-area:input;
+  width: 100%;
+  display:grid;
+  grid-template-areas: 'label1 label1'
+                        'input1 input1'
+                         'label2 label2' 
+                         'input2 input2'
+                         'label3 label3'
+                         'input3 input3'
+                          '. input4';
+  grid-template-columns: 1fr 1fr;                                        
+}
+
+.label1{
+  grid-area:label1;
+}
+.input1{
+  grid-area:input1;
+}
+.label2{
+  grid-area:label2;
+}
+.input2{
+  grid-area:input2;
+}
+.label3{
+  grid-area:label3;
+}
+.input3{
+  grid-area:input3;
+}
+.input4{
+  grid-area:input4;
+}
+
+ .LabelForm {
+
+  width:100%;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -34,7 +101,7 @@
 }
 
 .InputForm{
-  width: 300px;
+  width: 100%;
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px;
@@ -42,6 +109,7 @@
 
 .MsgForm {
   height: 100px;
+  width:100%;
 }
 .footer {
   position:fixed;
@@ -57,14 +125,14 @@
   font-weight: bold;
   font-size:24px;
 }
-.listaHeader{
+/* .listaHeader{
   display: flex;
   justify-content: space-between;
   padding: 0px 40px 0px 40px;
   margin: 0px;
   height: 50px;
   align-items: center;
-}
+} */
 .listaHeader li {
   list-style: none;
   color:#101010;
