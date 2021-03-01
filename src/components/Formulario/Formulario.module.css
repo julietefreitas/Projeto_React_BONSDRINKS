@@ -1,0 +1,73 @@
+.forms {
+  margin-top: 50px;
+  grid-area: forms;
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "contato contato"
+    "input input";
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo {
+  grid-area: contato;
+  width: 100%;
+}
+
+.AppForm {
+  grid-area: input;
+  width: 80%;
+  display: grid;
+  grid-template-areas:
+    "label1 label1"
+    "input1 input1"
+    "label2 label2"
+    "input2 input2"
+    "label3 label3"
+    "input3 input3"
+    ".      input4";
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+}
+
+.label1 {
+  grid-area: label1;
+  text-align: start;
+
+}
+.input1 {
+  grid-area: input1;
+  height: 30px;
+
+}
+.label2 {
+  grid-area: label2;
+  text-align: start;
+  
+}
+.input2 {
+  grid-area: input2;
+  height: 30px;
+  
+}
+.label3 {
+  grid-area: label3;
+  text-align: start;
+}
+.input3 {
+  grid-area: input3;
+  height: 80px;
+}
+.LabelForm {
+  font-size: 18px;
+  text-align: start;
+}
+.InputForm{
+  font-size: 20px;
+}
+.InputFormMsg{
+  font-size: 60px;
+  background-color: cyan;
+} 

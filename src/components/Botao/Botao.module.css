@@ -1,0 +1,15 @@
+.input4 {
+  grid-area: input4;
+  margin: 5px;
+  font-size: 24px;
+  background-color:#5c0511;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: #F9AE48;
+}
