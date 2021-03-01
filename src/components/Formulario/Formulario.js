@@ -17,7 +17,8 @@ export default class Formulario extends Component {
 					<input className={(styles.InputForm, styles.input2)} />
 					<br></br>
 					<label className={(styles.LabelForm, styles.label3)}>Mensagem</label>
-					<input className={(styles.InputFormMsg, styles.input3)}></input>
+					<br></br>
+					<input className={styles.input3}></input>
 					<Botao />
 				</form>
 			</div>
