@@ -14,6 +14,7 @@
 .titulo {
   grid-area: contato;
   width: 100%;
+  color: #5c0511;
 }
 
 .AppForm {
@@ -30,8 +31,17 @@
     ".      input4";
   grid-template-columns: 1fr 1fr;
   gap:20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+input {
+  border: 1px solid #101010;
+  border-radius: 4px;
 }
 
+input:hover {
+  border-color: #F9AE48;
+}
 .label1 {
   grid-area: label1;
   text-align: start;
@@ -65,7 +75,7 @@
   text-align: start;
 }
 .InputForm{
-  font-size: 20px;
+  
 }
 .InputFormMsg{
   font-size: 60px;
