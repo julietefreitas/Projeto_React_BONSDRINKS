@@ -1,0 +1,8 @@
+.imgContato{
+  grid-area: foto;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20%;
+  border-radius: 4px;
+  
+}
