@@ -1,0 +1,28 @@
+.header {
+  grid-area: head;
+  background-color:#FFFBEF;
+  border: 2px solid rgba(88, 85, 85, 0.1);
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 60px;
+  padding: 0px;
+}
+.listaHeader {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.listaHeader li {
+  list-style: none;
+  color: #101010;
+}
+.listaHeader li a {
+  text-decoration: none;
+}
+a:hover {
+  color: #f9ae48;
+  text-decoration: none;
+}
