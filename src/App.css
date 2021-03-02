@@ -1,80 +1,14 @@
 .App {
   text-align: center;
-  background-color: #FFFDF8;
+  background-color: #fffdf8;
   display: grid;
-  grid-template-areas: 'head head'
-              'foto forms';
-  grid-template-columns: 1fr 2fr;            
-
-}
-.header{
-  grid-area:head;
-}
-.listaHeader{
-  display:grid;
-  grid-template-columns: repeat(4,1fr);
-  width: 100%;
-  justify-content: space-around;
-} 
-
-.forms{
-  grid-area: forms;
-  display:grid;
-  width:100%;
-  grid-template-areas: 'contato contato'
-                      'input input';  
-  grid-template-columns: 1fr 1fr;
-
-}
-.titulo{
-  grid-area:contato;
-  width: 100%;
-}
-.AppForm{
-  grid-area:input;
-  width: 100%;
-  display:grid;
-  grid-template-areas: 'label1 label1'
-                        'input1 input1'
-                         'label2 label2' 
-                         'input2 input2'
-                         'label3 label3'
-                         'input3 input3'
-                          '. input4';
-  grid-template-columns: 1fr 1fr;                                        
-}
-
-.label1{
-  grid-area:label1;
-}
-.input1{
-  grid-area:input1;
-}
-.label2{
-  grid-area:label2;
-}
-.input2{
-  grid-area:input2;
-}
-.label3{
-  grid-area:label3;
-}
-.input3{
-  grid-area:input3;
-}
-.input4{
-  grid-area:input4;
-}
-
- .LabelForm {
-
-  width:100%;
-}
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  grid-template-areas:
+    "head head"
+    "foto forms"
+    "footer footer";
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 60px calc(100vh - 100px) 40px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -83,48 +17,15 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.AppForm {
-  font-size: 20px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.InputForm{
+/* .InputForm {
   width: 100%;
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px;
-}
+} */
 
-.MsgForm {
-  height: 100px;
-  width:100%;
-}
-.footer {
-  position:fixed;
-  bottom: 0px;
-  background-color: red;
-  height: 40px;
-  width: 100% ;
-  font-weight: bold;
-  font-size:18px;
-}
-.header {
-  background-color: #61dafb;
-  font-weight: bold;
-  font-size:24px;
-}
+
 /* .listaHeader{
   display: flex;
   justify-content: space-between;
@@ -133,18 +34,6 @@
   height: 50px;
   align-items: center;
 } */
-.listaHeader li {
-  list-style: none;
-  color:#101010;
-}
-.listaHeader li a{
-  text-decoration: none;
-
-}
-a:hover {
-  color: #F9AE48;
-  text-decoration: none;
-}
 
 .App-link {
   color: #61dafb;
