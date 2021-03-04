@@ -2,7 +2,8 @@
   margin-top: 50px;
   grid-area: forms;
   display: grid;
-  width: 100%;
+  width: 80%;
+  place-self: center;
   grid-template-areas:
     "contato contato"
     "input input";
@@ -15,6 +16,8 @@
   grid-area: contato;
   width: 100%;
   color: #5c0511;
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .AppForm {
@@ -33,6 +36,7 @@
   gap:20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+  margin-top:30px;
 }
 input {
   border: 1px solid #101010;
@@ -74,9 +78,9 @@ input:hover {
   font-size: 18px;
   text-align: start;
 }
-.InputForm{
+/* .InputForm{
   
-}
+} */
 .InputFormMsg{
   font-size: 60px;
   background-color: cyan;
