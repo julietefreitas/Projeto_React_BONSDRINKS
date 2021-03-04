@@ -5,7 +5,7 @@ export default class MenuHeader extends Component {
 	render() {
 		return (
 			<header className={styles.header}>
-				<nav>
+				<nav className={styles.navHeader}>
 					<ul className={styles.listaHeader}>
 						<li>
 							<a className={styles.ancoraHeader} href="">
@@ -18,7 +18,10 @@ export default class MenuHeader extends Component {
 							</a>
 						</li>
 						<li>
-							<a className={styles.ancoraHeader} href="">
+							<a
+								className={styles.ancoraHeader + " " + styles.ancoraLogo}
+								href=""
+							>
 								Bons Drinks
 							</a>
 						</li>
