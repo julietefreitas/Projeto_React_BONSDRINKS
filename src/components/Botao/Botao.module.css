@@ -1,12 +1,12 @@
 .input4 {
   grid-area: input4;
   margin: 5px;
-  font-size: 24px;
+  font-size: 20px;
   background-color:#5c0511;
   color:white;
   border: none;
   border-radius: 5px;
-  height: 35px;
+  height: 40px;
   font-weight: bold;
 }
 
