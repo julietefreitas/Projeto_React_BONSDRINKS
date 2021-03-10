@@ -1,40 +1,31 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import styles from "./Botao.module.css";
 
-export default class Botao extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			disabled: false,
-			nome: "Enviar",
-		};
-		this.handleClick = this.handleClick.bind(this);
-	}
-	handleClick(e) {
+function Botao(props) {
+	const [disabled, setDisabled] = useState(false);
+	const [nome, setNome] = useState("Enviar");
+
+	const handleClick = (e) => {
 		e.preventDefault();
 		console.log("oi");
-		this.setState(() => ({
-			disabled: true,
-			nome: "Enviando...",
-		}));
+		setDisabled(true);
+		setNome("Enviando...");
 		setTimeout(() => {
-			this.setState(() => ({
-				disabled: false,
-				nome: "Enviar",
-			}));
+			setDisabled(false);
+			setNome("Enviar");
 		}, 3000);
-	}
+	};
 
-	render() {
-		return (
-			<button
-				type="submit"
-				disabled={this.state.disabled}
-				className={styles.input4}
-				onClick={this.handleClick}
-			>
-				{this.state.nome}
-			</button>
-		);
-	}
+	return (
+		<button
+			type="submit"
+			disabled={disabled}
+			className={styles.input4}
+			onClick={handleClick}
+		>
+			{nome}
+		</button>
+	);
 }
+
+export default Botao;
