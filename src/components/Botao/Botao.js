@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Botao.module.css";
 
-function Botao(props) {
+function Botao() {
 	const [disabled, setDisabled] = useState(false);
 	const [nome, setNome] = useState("Enviar");
 
