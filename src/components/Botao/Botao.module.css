@@ -12,4 +12,5 @@
 
 button:hover{
   background-color: #F9AE48;
+  transition-duration: 3s;
 }
