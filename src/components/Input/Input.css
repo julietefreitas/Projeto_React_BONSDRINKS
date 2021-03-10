@@ -1,0 +1,47 @@
+input {
+  border: 1px solid #101010;
+  border-radius: 4px;
+}
+
+input:hover {
+  border-color: #F9AE48;
+}
+.label1 {
+  grid-area: label1;
+  text-align: start;
+
+}
+.input1 {
+  grid-area: input1;
+  height: 30px;
+
+}
+.label2 {
+  grid-area: label2;
+  text-align: start;
+  
+}
+.input2 {
+  grid-area: input2;
+  height: 30px;
+  
+}
+.label3 {
+  grid-area: label3;
+  text-align: start;
+}
+.input3 {
+  grid-area: input3;
+  height: 80px;
+}
+.LabelForm {
+  font-size: 18px;
+  text-align: start;
+}
+/* .InputForm{
+  
+} */
+.InputFormMsg{
+  font-size: 60px;
+  background-color: cyan;
+} 
