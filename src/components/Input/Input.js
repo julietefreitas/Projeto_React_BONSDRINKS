@@ -1,22 +1,30 @@
 import "./Input.css";
+import React, { useState } from "react";
 
-export default function Input(props) {
-	const label = props.infoLabel;
-	const input = props.input;
-	//console.log(label, input);
+const Input = ({ label, input, htmlFor, id, name, type, children }) => {
+	const [entrada, setEntrada] = useState("");
+
+	const event = (e) => {
+		setEntrada(e.target.value);
+		console.log(entrada);
+	};
+
 	return (
 		<>
-			<label className={"LabelForm" + " " + label}>{props.children}</label>
+			<label htmlFor={htmlFor} className={"LabelForm" + " " + label}>
+				{children}
+			</label>
 			<br></br>
-			<input className={"InputForm" + " " + input} />
+			<input
+				type={type}
+				id={id}
+				name={name}
+				className={"InputForm" + " " + input}
+				value={entrada}
+				onChange={event}
+			/>
 			<br></br>
 		</>
 	);
-}
-/* 
-label1;
-input1;
-label2;
-input2;
-label3;
-input3; */
+};
+export default Input;
