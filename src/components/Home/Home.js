@@ -1,7 +1,7 @@
 import React from "react";
 import Imagem from "../Imagem/Imagem";
 
-function Home() {
+const Home = () => {
 	return (
 		<>
 			<Imagem
@@ -10,6 +10,6 @@ function Home() {
 			/>
 		</>
 	);
-}
+};
 
 export default Home;
