@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Botao.module.css";
 
 function Botao() {
@@ -7,7 +7,6 @@ function Botao() {
 
 	const handleClick = (e) => {
 		e.preventDefault();
-		console.log("oi");
 		setDisabled(true);
 		setNome("Enviando...");
 		setTimeout(() => {
@@ -17,14 +16,17 @@ function Botao() {
 	};
 
 	return (
-		<button
-			type="submit"
-			disabled={disabled}
-			className={styles.input4}
-			onClick={handleClick}
-		>
-			{nome}
-		</button>
+		<>
+			<button
+				type="submit"
+				disabled={disabled}
+				className={styles.input4}
+				onClick={handleClick}
+			>
+				{nome}
+			</button>
+			<p>Você clicou {contador} vezes!</p>
+		</>
 	);
 }
 
