@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Botao from "../Botao/Botao";
 import styles from "./Formulario.module.css";
 import Imagem from "../Imagem/Imagem";
-import logoContato from "../../imagens/contact-pic.jpg";
+import logoContato from "../../assets/contact-pic.jpg";
 import Input from "../Input/Input";
 
 const Formulario = () => {
