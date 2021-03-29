@@ -1,0 +1,45 @@
+.nosso_time {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: "titulo titulo"
+    "imagem texto";
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  
+
+}
+
+.titulo {
+  grid-area: titulo;
+  font-family: 'Open Sans Condensed', sans-serif;
+  width: 100%;
+  color: #5c0511;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.imagem_perfil {
+  grid-area: imagem;
+  width: 60%;
+  height: 80%;
+  border-radius: 50%;
+  margin-top: 20px;
+  justify-self: center;
+
+}
+
+.texto_perfil {
+  display: inline;
+  grid-area: texto;
+  text-align: justify;
+  justify-items: center;
+  align-self: start;
+  font-size: 2rem;
+  color: rgb(78, 77, 77);
+  max-width: 100%;
+  width: 80%;
+  height: 400px;
+  max-height: 500px;
+  margin-block-start: 0;
+  align-self: center;
+}

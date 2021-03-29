@@ -1,0 +1,82 @@
+.container_drinks {
+  grid-area: main;
+  display: grid;
+  width: 80%;
+  grid-template-areas:
+    "titulo titulo titulo titulo"
+    "nav nav nav nav"
+    "conteudo conteudo conteudo conteudo";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 50px auto;
+  grid-gap: 20px;
+  gap: 20px;
+  justify-self: center;
+}
+
+.titulo {
+  grid-area: titulo;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #5c0511;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navBar {
+  grid-area: nav;
+}
+
+.btnUl {
+  display: grid;
+  grid-template-areas: "btn btn1 btn2 btn2";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  gap: 10px;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 0px !important;
+
+}
+
+.btn {
+  grid-area: btn;
+  background-color: rgb(249, 174, 72) !important;
+  border-radius: 12px !important;
+  padding: 8px 20px;
+  width: 80%;
+}
+
+.btn1 {
+  grid-area: btn1;
+  background-color: #5c0511;
+  border-radius: 12px;
+  padding: 8px 20px;
+  width: 80%;
+}
+
+.btn>a,
+.btn1>a {
+  color: #fffdf8;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  justify-self: center !important;
+  align-self: center;
+  margin-bottom: 0px !important;
+  height: auto;
+}
+
+.btn>a:link,
+.btn1>a:link {
+  text-decoration: none;
+  color: #fffdf8;
+}
+
+.btn>a:hover,
+.btn1>a:hover {
+  color: #fffdf8;
+
+}

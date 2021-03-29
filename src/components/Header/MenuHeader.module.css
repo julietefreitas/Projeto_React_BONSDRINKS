@@ -1,0 +1,46 @@
+.header {
+  grid-area: head;
+  background-color:#FFFBEF;
+  border: 2px solid rgba(88, 85, 85, 0.1);
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 60px;
+  width: 100%;
+  align-self: flex-end;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 42%)
+  
+}
+
+.listaHeader {
+  background-color:#FFFBEF;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 50px);
+  width: 100%;
+  justify-content: space-around;
+}
+
+.ancoraHeader{
+  text-decoration: none;
+  color: #101010;
+  list-style: none;
+}
+.ancoraHeader:hover{
+  color: #f9ae48;
+  text-decoration: none;
+}
+
+.ancoraLogo{
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 'Bilbo Swash Caps', cursive;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited{
+  color: #101010;
+}

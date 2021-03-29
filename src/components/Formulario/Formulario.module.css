@@ -1,0 +1,46 @@
+.main {
+  grid-area: main;
+  display: grid;
+  width: 80%;
+  height: 100%;
+  place-self: center;
+  grid-template-areas:
+    "contato contato"
+    "foto input";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 100px auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  grid-area: contato;
+  width: 100%;
+  color: #5c0511;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.AppForm {
+  grid-area: input;
+  width: 80%;
+  max-width: 100%;
+  display: grid;
+  grid-template-areas:
+    "label1 label1"
+    "input1 input1"
+    "label2 label2"
+    "input2 input2"
+    "label3 label3"
+    "input3 input3"
+    ".      input4";
+  gap: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  justify-self: start;
+  align-self: start;
+}

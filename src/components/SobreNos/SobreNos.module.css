@@ -1,0 +1,47 @@
+.main {
+  display: grid;
+  width: 80%;
+  height: 100%;
+  place-self: center;
+  grid-area: main;
+  grid-template-areas:
+    "titulo titulo"
+    "foto texto";
+  column-gap: 20px;
+  row-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px calc(100vh - 160px);
+}
+
+.titulo {
+  grid-area: titulo;
+  text-align: center;
+  width: 100%;
+  color: #5c0511;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  align-self: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.texto {
+  grid-area: texto;
+  text-align: justify;
+  justify-items: center;
+  align-self: start;
+  font-size: 2rem;
+  color: rgb(78, 77, 77);
+  max-width: 100%;
+  width: 80%;
+  height: 400px;
+  max-height: 500px;
+  margin-block-start: 0;
+
+}
+
+@media (max-width: 959px) {
+  #main #content-wrap {
+    padding-bottom: 0;
+  }
+}
