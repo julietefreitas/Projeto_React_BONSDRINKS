@@ -1,0 +1,101 @@
+.container_drinks {
+  grid-area: main;
+  margin-top: 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  justify-self: center;
+}
+
+.api_drinks {
+  display: grid;
+  grid-template-rows: 100px 300px 100px;
+  grid-template-columns: 200px 600px 200px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 300px;
+  flex-grow: 2;
+  list-style-type: none;
+  align-items: flex-start;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container_infos {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.tituloDrink {
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: inline;
+  color: #5c0511;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+.divBotao {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  background-color: #5c0511;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  width: 200px;
+  font-size: large;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e05a0c;
+}
+
+.secao_bebidas {
+  grid-row: 2;
+  grid-column: 1;
+  overflow-y: scroll;
+  margin-top: 0px;
+  height: 400px;
+}
+
+.drink_conteudo {
+  grid-row: 2;
+  grid-column: 2;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.imagem_drink {
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-row: 2;
+  grid-column: 3;
+  justify-self: center;
+}
+
+.imgApi {
+  width: 160px;
+  align-self: center;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5c0511;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e05a0c;
+}
