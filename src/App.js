@@ -2,10 +2,12 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import MenuHeader from "./components/Header/MenuHeader";
 import Formulario from "./components/Formulario/Formulario";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 import SobreNos from "./components/SobreNos/SobreNos";
 import Home from "./components/Home/Home";
 import Drinks from "./components/Drinks/Drinks";
+import DrinksPopulares from "./components/DrinksPopulares/DrinksPopulares";
+import Time from "./components/Time/Time";
 
 const App = () => {
 	return (
@@ -23,10 +25,13 @@ const App = () => {
 						<SobreNos />
 					</Route>
 					<Route exact path="/nossoTime">
-						<SobreNos />
+						<Time />
 					</Route>
-					<Route exact path="/drinks">
+					<Route exact path="/drinks/">
 						<Drinks />
+					</Route>
+					<Route exact path="/drinks/pop">
+						<DrinksPopulares/>
 					</Route>
 				</Switch>
 				<Footer />
