@@ -1,0 +1,30 @@
+.lista_informacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 30px;
+  align-items: flex-start;
+
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.titulo_infos {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+p {
+  display: inline;
+}
+
+.texto_label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal !important;
+  text-align: justify;
+}
