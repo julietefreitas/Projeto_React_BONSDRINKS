@@ -25,7 +25,6 @@ function Botao() {
 			>
 				{nome}
 			</button>
-			<p>Você clicou {contador} vezes!</p>
 		</>
 	);
 }
