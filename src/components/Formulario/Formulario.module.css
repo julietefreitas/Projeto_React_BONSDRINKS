@@ -4,12 +4,12 @@
   width: 80%;
   height: 100%;
   place-self: center;
-   grid-template-areas:
+  grid-template-areas:
     "contato contato"
     "foto input";
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
-  row-gap:50px;
+  row-gap: 50px;
   justify-items: center;
   align-items: center;
   grid-template-rows: 100px auto;
@@ -17,6 +17,7 @@
 }
 
 .titulo {
+  font-family: 'Open Sans Condensed', sans-serif;
   grid-area: contato;
   width: 100%;
   color: #5c0511;
@@ -37,7 +38,7 @@
     "label3 label3"
     "input3 input3"
     ".      input4";
-  gap:20px;
+  gap: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   justify-self: start;

@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Imagem.module.css";
+import style from "./Imagem.module.css";
 
 function Imagem({ foto, classe }) {
 	return (
 		<img
-			className={classe == undefined ? styles.imgContato : styles.imagemHome}
+			className={classe == undefined ? style.imgContato : style.imagemHome}
 			src={foto}
 		/>
 	);
