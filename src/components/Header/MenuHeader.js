@@ -1,79 +1,27 @@
 import styles from "./MenuHeader.module.css";
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import {
-	Collapse,
-	Navbar,
-	NavbarToggler,
-	NavbarBrand,
-	Nav,
-	NavItem,
-	NavLink,
-	UncontrolledDropdown,
-	DropdownToggle,
-	DropdownMenu,
-	DropdownItem,
-	NavbarText,
-} from "reactstrap";
+import React from "react";
 
 const MenuHeader = () => {
-	const [isOpen, setIsOpen] = useState(false);
-
-	const toggle = () => setIsOpen(!isOpen);
 	return (
 		<div className={styles.header}>
-			<Navbar className={styles.listaHeader} light expand="lg">
-				<NavbarToggler onClick={toggle}></NavbarToggler>
-				<Collapse isOpen={isOpen} navbar>
-					<Nav className={styles.listaHeader + " " + "ml-auto"} navbar>
-						<NavItem>
-							<Link
-								to="/drinks"
-								className={styles.ancoraHeader}
-								onClick={toggle}
-							>
-								Drinks
-							</Link>
-						</NavItem>
-						<NavItem>
-							<Link
-								to="/sobre"
-								className={styles.ancoraHeader}
-								onClick={toggle}
-							>
-								Sobre Nós
-							</Link>
-						</NavItem>
-						<NavItem>
-							<Link
-								to="/"
-								className={styles.ancoraHeader + " " + styles.ancoraLogo}
-								onClick={toggle}
-							>
-								Bons Drinks
-							</Link>
-						</NavItem>
-						<NavItem>
-							<Link
-								to="/nossoTime"
-								className={styles.ancoraHeader}
-								onClick={toggle}
-							>
-								Nosso Time
-							</Link>
-						</NavItem>
-						<NavItem>
-							<Link
-								to="/contato"
-								className={styles.ancoraHeader}
-								onClick={toggle}
-							>
-								Contato
-							</Link>
-						</NavItem>
-					</Nav>
-				</Collapse>
-			</Navbar>
+			<nav className={styles.listaHeader}>
+				<Link to="/drinks" className={styles.ancoraHeader}>
+					Drinks
+				</Link>
+				<Link to="/sobre" className={styles.ancoraHeader}>
+					Sobre Nós
+				</Link>
+				<Link to="/" className={styles.ancoraHeader + " " + styles.ancoraLogo}>
+					Bons Drinks
+				</Link>
+				<Link to="/nossoTime" className={styles.ancoraHeader}>
+					Nosso Time
+				</Link>
+				<Link to="/contato" className={styles.ancoraHeader}>
+					Contato
+				</Link>
+			</nav>
 		</div>
 	);
 };

@@ -1,18 +1,19 @@
 .container_drinks {
   grid-area: main;
-  margin-top: 40px;
   font-family: 'Open Sans Condensed', sans-serif;
   justify-self: center;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-top:0px;
 }
 
 .api_drinks {
   display: grid;
-  grid-template-rows: 100px 300px 100px;
+  grid-template-rows: 80px 300px 100px;
   grid-template-columns: 200px 600px 200px;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  height: 300px;
   flex-grow: 2;
   list-style-type: none;
   align-items: flex-start;
@@ -87,15 +88,3 @@
   border-radius: 10px;
 }
 
-::-webkit-scrollbar {
-  width: 16px;
-  height: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #5c0511;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #e05a0c;
-}

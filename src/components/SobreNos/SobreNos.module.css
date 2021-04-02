@@ -30,13 +30,14 @@
   text-align: justify;
   justify-items: center;
   align-self: start;
-  font-size: 2rem;
+  font-size: 18px;
   color: rgb(78, 77, 77);
   max-width: 100%;
   width: 80%;
   height: 400px;
   max-height: 500px;
   margin-block-start: 0;
+  font-family: 'Open Sans', sans-serif;
 
 }
 

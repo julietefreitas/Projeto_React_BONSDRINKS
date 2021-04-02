@@ -11,7 +11,7 @@ export default function ConteudoDrinks({
 }) {
   return (
     <ul className={style.lista_informacoes}>
-      <li >
+      <li className={style.ilConteudo}>
         <h3 className={style.titulo_infos}>Nome:<p className={style.texto_label}> {nomeDrink}</p></h3> 
       </li>
       <li className={style.ilConteudo}>

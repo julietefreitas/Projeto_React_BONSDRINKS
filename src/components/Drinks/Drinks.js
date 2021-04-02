@@ -1,24 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, Route , Switch} from 'react-router-dom';
-import Card from "../Card/Card";
-import Botao from "../Botao/Botao";
 import DrinksPopulares from  "../DrinksPopulares/DrinksPopulares"
 import styles from "./Drinks.module.css"
 
 function Drinks() {
-	const [results, setResults] = useState([]);
-/* 
-	useEffect(() => {
-		fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
-			.then((response) => {
-				return response.json();
-			})
-			.then((dados) => {
-				dados = dados.drinks;
-				setResults(dados);
-			});
-	}, []);
-	useEffect(() => {}); */
 
 	return (
 		<div className = {styles.container_drinks}>,

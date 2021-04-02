@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Botao from "../Botao/Botao";
 import styles from "./Formulario.module.css";
 import Imagem from "../Imagem/Imagem";
@@ -19,6 +19,7 @@ const Formulario = () => {
 					label="label1"
 					input="input1"
 					children="Nome"
+					required
 				/>
 				<Input
 					htmlFor="femail"
@@ -28,6 +29,7 @@ const Formulario = () => {
 					label="label2"
 					input="input2"
 					children="Email"
+					required
 				/>
 				<Input
 					htmlFor="fmsg"
@@ -37,6 +39,7 @@ const Formulario = () => {
 					label="label3"
 					input="input3"
 					children="Mensagem"
+					required
 				/>
 				<Botao />
 			</form>

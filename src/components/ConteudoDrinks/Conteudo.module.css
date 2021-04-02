@@ -7,10 +7,10 @@
   align-items: flex-start;
 
 }
-
-li {
-  margin-bottom: 5px;
+.ilConteudo{
+  height: 40px;
 }
+
 
 .titulo_infos {
   font-family: 'Open Sans Condensed', sans-serif;

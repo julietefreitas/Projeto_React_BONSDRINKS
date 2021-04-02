@@ -22,6 +22,7 @@ const Input = ({ label, input, htmlFor, id, name, type, children }) => {
 				className={"InputForm" + " " + input}
 				value={entrada}
 				onChange={event}
+				required
 			/>
 			<br></br>
 		</>

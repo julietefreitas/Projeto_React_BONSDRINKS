@@ -2,11 +2,12 @@
   grid-area: main;
   display: grid;
   grid-template-areas: "titulo titulo"
-    "imagem texto";
+    "time1 time2"
+    "time3 time4";
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  
-
+  grid-template-rows: 120px 300px 300px;
+  justify-self: center;
 }
 
 .titulo {
@@ -16,25 +17,85 @@
   color: #5c0511;
   font-size: 40px;
   font-weight: bold;
+  padding-bottom: 10px;
+}
+.time1{
+  grid-area: time1;
+  display: grid;
+  grid-template-areas: "imagem1 texto1";
+  grid-template-columns: repeat(2, 1fr); 
+}
+.imagem_perfil1 {
+  grid-area:imagem1;
+  border: 1px solid #101010;
+  
 }
 
-.imagem_perfil {
-  grid-area: imagem;
-  width: 60%;
-  height: 80%;
-  border-radius: 50%;
-  margin-top: 20px;
+.texto_perfil1 {
+  grid-area: texto1;
+  
+}
+
+.time2{
+  grid-area: time2;
+  display: grid;
+  grid-template-areas: "imagem2 texto2";
+  grid-template-columns: repeat(2, 1fr); 
+}
+.imagem_perfil2 {
+  grid-area:imagem2;
+}
+
+.texto_perfil2 {
+
+  grid-area: texto2;
+  
+}
+
+.time3{
+  grid-area: time3;
+  display: grid;
+  grid-template-areas: "imagem3 texto3";
+  grid-template-columns: repeat(2, 1fr); 
+}
+.imagem_perfil3 {
+  grid-area:imagem3;
+}
+
+.texto_perfil3 {
+  grid-area: texto3;
+}
+
+.time4{
+  grid-area: time4;
+  display: grid;
+  grid-template-areas: "imagem4 texto4";
+  grid-template-columns: repeat(2, 1fr); 
+}
+.imagem_perfil4 {
+  grid-area:imagem4;
+}
+
+.texto_perfil4 {
+  grid-area: texto4;
+}
+
+.imagemPerfis{
+  width: 230px ;
+  height: 220px ;
+  border-radius: 5px;
   justify-self: center;
-
 }
 
-.texto_perfil {
+.imagemPerfis:hover {
+  border:2px solid #5c0511;
+}
+.textoPerfis{
   display: inline;
-  grid-area: texto;
   text-align: justify;
   justify-items: center;
   align-self: start;
-  font-size: 2rem;
+  font-size: 12px;
   color: rgb(78, 77, 77);
   max-width: 100%;
   width: 80%;
@@ -42,4 +103,6 @@
   max-height: 500px;
   margin-block-start: 0;
   align-self: center;
+  font-family: 'Open Sans', sans-serif;
 }
+

@@ -25,6 +25,7 @@
   text-decoration: none;
   color: #101010;
   list-style: none;
+  margin-top: 10px;
 }
 .ancoraHeader:hover{
   color: #f9ae48;
@@ -35,6 +36,8 @@
   font-size: 40px;
   font-weight: normal;
   font-family: 'Bilbo Swash Caps', cursive;
+  text-decoration: none;
+  margin-top: 5px !important;
 }
 
 a:link {
